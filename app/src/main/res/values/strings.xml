@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">EmpowerMeUI</string>
+
+    <!--   About Us   -->
+    <string name="AboutUsTV">About Us</string>
+    <string name="tvAboutDescription">The EmpowerMe is a user-friendly mobile application
+        that simplifies the job search process for job seekers  and employers. It offers
+        powerful search options,  resume upload, and job alerts for job seekers,  while
+        providing a platform for employers to  post job openings and review applications.
+        With the job app, users can find and apply for  relevant job opportunities
+        conveniently and efficiently.</string>
+    <string name="tvRights">©All Rights Reserved </string>
+    <string name="tvFollowUs">Follow Us </string>
+
+    <!--   Applications   -->
+    <string name="ApplicationsTV">Applications</string>
+    <string name="tvRecent">Recent</string>
+    <string name="tvApplications">#Applications</string>
+    <string name="tvJobApplicants">Job Applicants</string>
+    <string name="tvUserName">Imesh Pasinda</string>
+    <string name="tvPosition">for sales associate</string>
+
+    <!--   Become an Investor   -->
+    <string name="tvHeaderInvestor">Enter your details*</string>
+    <string name="formInputName">Name*</string>
+    <string name="formInputEmail">Email*</string>
+    <string name="formInputCompanyName">Company Name*</string>
+    <string name="formInputContactNumber">Contact Number*</string>
+    <string name="btnInvestorRequest">Request*</string>
+
+    <!--   Become an Investor Success   -->
+    <string name="tvRequestSuccessfully">Request send successfully</string>
+    <string name="tvWeWillSentence">We will contact you within 3–5</string>
+    <string name="tvWorkingDays">working days.</string>
+
+    <!--   Financial History   -->
+    <string name="HistoryTV">History</string>
+    <string name="tvActivities">#Activities.</string>
+    <string name="tvSendMoney">Send Money</string>
+    <string name="tvSendMoneyMember">Lakshan Jay</string>
+    <string name="tvSendMoneyAmount">Sent LKR 50000.00</string>
+    <string name="tvRequestMoney">Request Money</string>
+    <string name="tvRequestMoneyMember">Kishen Ranasinghe</string>
+    <string name="tvRequestMoneyAmount">Sent LKR 50000.00</string>
+
+</resources>
