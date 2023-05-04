@@ -124,6 +124,7 @@
     <EditText
         android:id="@+id/MoneyRName"
         android:paddingLeft="9dp"
+        android:paddingRight="9dp"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_input"
@@ -156,17 +157,21 @@
     <EditText
         android:id="@+id/MoneyRDescription"
         android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="9dp"
         android:layout_width="340dp"
         android:layout_height="80dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:inputType="textMultiLine"
         android:minLines="3"
+        android:gravity="top|start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.717" />
+
 
     <TextView
         android:id="@+id/textView32"
@@ -174,17 +179,18 @@
         android:layout_height="wrap_content"
         android:alpha="0.8"
         android:fontFamily="@font/gilroy_semibold"
-        android:text="Business Name*"
+        android:text="Name*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.343" />
 
     <EditText
         android:id="@+id/MoneyRAmount"
         android:paddingLeft="9dp"
+        android:paddingRight="9dp"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_input"
@@ -214,6 +220,7 @@
     <EditText
         android:id="@+id/MoneyREmail"
         android:paddingLeft="9dp"
+        android:paddingRight="9dp"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_input"

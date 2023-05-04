@@ -53,10 +53,32 @@ class RequestMoney : AppCompatActivity() {
             val investorName = intent.getStringExtra("investor_name")
 
             // Show an error message if any required field is empty
-            if (sRMName.isEmpty() || sRMEmail.isEmpty() || sRMDescription.isEmpty() || sRMAmount.isEmpty()) {
-                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
+            if (sRMName.isEmpty()) {
+                // Show an error message for the name field
+                reqMoneyName.setError("Please enter the name")
                 return@setOnClickListener
             }
+
+            if (sRMEmail.isEmpty()) {
+                // Show an error message for the email field
+                reqMoneyEmail.setError("Please enter the email")
+                return@setOnClickListener
+            }
+
+            if (sRMDescription.isEmpty()) {
+                // Show an error message for the description field
+                reqMoneyDescription.setError("Please enter the description")
+                return@setOnClickListener
+            }
+
+            if (sRMAmount.isEmpty()) {
+                // Show an error message for the amount field
+                reqMoneyAmount.setError("Please enter the amount")
+                return@setOnClickListener
+            }
+
+// If all fields are filled, continue with the rest of the code here
+
             val moneyRequestsMap = hashMapOf(
                 "name" to sRMName,
                 "email" to sRMEmail,

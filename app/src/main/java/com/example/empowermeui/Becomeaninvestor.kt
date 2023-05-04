@@ -61,16 +61,36 @@ class Becomeaninvestor : AppCompatActivity() {
             val sInContactNumber = inContactNumber.text.toString().trim()
 
             // Show an error message if any required field is empty
-            if (sInName.isEmpty() || sInEmail.isEmpty() || sInCompanyName.isEmpty() || sInContactNumber.isEmpty()) {
-                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
+            if (sInName.isEmpty()) {
+                // Show an error message for the name field
+                inName.setError("Please enter your name")
                 return@setOnClickListener
             }
 
-            // Show an error message if no image is selected
+            if (sInEmail.isEmpty()) {
+                // Show an error message for the email field
+                inEmail.setError("Please enter your email")
+                return@setOnClickListener
+            }
+
+            if (sInCompanyName.isEmpty()) {
+                // Show an error message for the company name field
+                inCompanyName.setError("Please enter your company name")
+                return@setOnClickListener
+            }
+
+            if (sInContactNumber.isEmpty()) {
+                // Show an error message for the contact number field
+                inContactNumber.setError("Please enter your contact number")
+                return@setOnClickListener
+            }
+
+// Show an error message if no image is selected
             if (imageUri == null) {
                 Toast.makeText(this, "Please select an image", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
 
             // Upload the image to Firebase Storage and save the image URL along with the other form data in a Firestore collection
             val investorId = UUID.randomUUID().toString()
