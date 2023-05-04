@@ -19,7 +19,7 @@ class MyRequestsAdapter(private val moneyRequestsList: ArrayList<ReqMoney>):
 
         val tvReqName: TextView = itemView.findViewById(R.id.RequesterName)
         val tvReqAmount: TextView = itemView.findViewById(R.id.RequestAmount)
-        //val sendmoneyBtn: ImageButton = itemView.findViewById(R.id.sendMoneyBtn)
+        val sendmoneyBtn: ImageButton = itemView.findViewById(R.id.sendMoneyBtn)
 
         fun bind(reqMoney: ReqMoney) {
 
@@ -30,16 +30,16 @@ class MyRequestsAdapter(private val moneyRequestsList: ArrayList<ReqMoney>):
 
 
 
-//            sendMoneyBtn.setOnClickListener {
-//                val intent = Intent(itemView.context, RequestMoneyPage::class.java)
-//                intent.putExtra("email", reqMoney.email)
-//                intent.putExtra("description", reqMoney.description)
-//                intent.putExtra("amount", reqMoney.amount)
-//                intent.putExtra("investorName", reqMoney.investorName)
-//                intent.putExtra("name", reqMoney.name)
-//                intent.putExtra("documentId", reqMoney.documentId)
-//                itemView.context.startActivity(intent)
-//            }
+            sendmoneyBtn.setOnClickListener {
+                val intent = Intent(itemView.context, SendMoneyPayment::class.java)
+                intent.putExtra("email", reqMoney.email)
+                intent.putExtra("description", reqMoney.description)
+                intent.putExtra("amount", reqMoney.amount)
+                intent.putExtra("name", reqMoney.name)
+                intent.putExtra("documentId", reqMoney.documentId)
+
+                itemView.context.startActivity(intent)
+            }
 
 
         }
