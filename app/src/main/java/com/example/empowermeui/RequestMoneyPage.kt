@@ -1,10 +1,15 @@
 package com.example.empowermeui
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.core.app.NotificationCompat
 import com.google.firebase.firestore.FirebaseFirestore
 
 class RequestMoneyPage : AppCompatActivity() {
@@ -60,10 +65,35 @@ class RequestMoneyPage : AppCompatActivity() {
             if (docRef != null) {
                 docRef.delete()
                     .addOnSuccessListener {
-//                        Toast.makeText(this, "Request deleted successfully", Toast.LENGTH_SHORT).show()
-                        // redirect to FinancialHistory activity after deleting document
+                        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+                        val notificationId = 1
+                        val channelId = "my_channel_id"
+                        val channelName = "My Channel"
+                        val importance = NotificationManager.IMPORTANCE_HIGH
+                        val notificationTitle = "Request deleted successfully"
+                        val notificationText = "Your request has been deleted successfully."
+
+                        // Create a notification channel (required for Android Oreo and above)
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            val channel = NotificationChannel(channelId, channelName, importance)
+                            notificationManager.createNotificationChannel(channel)
+                        }
+
+                        // Create a notification
+                        val notificationBuilder = NotificationCompat.Builder(this, channelId)
+                            .setSmallIcon(R.drawable.usera)
+                            .setContentTitle(notificationTitle)
+                            .setContentText(notificationText)
+                            .setAutoCancel(true)
+
+                        // Show the notification
+                        notificationManager.notify(notificationId, notificationBuilder.build())
+
+                        // Redirect to the RequestDeletedSuccess activity after deleting document
                         val intent = Intent(this, RequestDeletedSuccess::class.java)
                         startActivity(intent)
+
                     }
                     .addOnFailureListener { e ->
                         Toast.makeText(this, "Error deleting document: ${e.message}", Toast.LENGTH_SHORT).show()
