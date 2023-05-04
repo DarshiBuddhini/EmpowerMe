@@ -6,155 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".SendmoneyHome">
 
-    <ImageButton
-        android:id="@+id/button5"
-        android:layout_width="63dp"
-        android:layout_height="63dp"
-        android:layout_marginLeft="12dp"
-        android:background="@drawable/roundbtn"
-        android:elevation="10dp"
-        android:scaleType="fitCenter"
-
-
-        android:src="@drawable/paperplane"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleviewSendMoney"
+        android:layout_width="382dp"
+        android:layout_height="495dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
-
-    <ImageButton
-        android:id="@+id/button6"
-        android:layout_width="63dp"
-        android:layout_height="63dp"
-        android:layout_marginLeft="12dp"
-        android:background="@drawable/roundbtn"
-        android:elevation="10dp"
-        android:scaleType="fitCenter"
-
-
-        android:src="@drawable/paperplane"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
-
-    <ImageView
-        android:id="@+id/imageView40"
-        android:layout_width="109dp"
-        android:layout_height="164dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837"
-        app:srcCompat="@drawable/darshiavatar" />
-
-    <ImageView
-        android:id="@+id/imageView39"
-        android:layout_width="111dp"
-        android:layout_height="212dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676"
-        app:srcCompat="@drawable/kimuthuavatar" />
-
-    <TextView
-        android:id="@+id/textView56"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/gilroy_semibold"
-        android:text="Darshi Buddhini"
-        android:textAlignment="center"
-        android:textColor="@color/ash"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
-
-    <TextView
-        android:id="@+id/textView38"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/gilroy_semibold"
-        android:text="Lakshan Jay"
-        android:textAlignment="center"
-        android:textColor="@color/ash"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
-
-    <TextView
-        android:id="@+id/textView36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="0.8"
-        android:fontFamily="@font/gilroy_semibold"
-        android:text="Request LKR 50000.00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.485" />
-
-    <TextView
-        android:id="@+id/textView54"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/gilroy_semibold"
-        android:text="Sadeesha Jay"
-        android:textAlignment="center"
-        android:textColor="@color/ash"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.611" />
-
-    <TextView
-        android:id="@+id/textView55"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="0.8"
-        android:fontFamily="@font/gilroy_semibold"
-        android:text="Request LKR 30000.00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
-
-    <TextView
-        android:id="@+id/textView53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="0.8"
-        android:fontFamily="@font/gilroy_semibold"
-        android:text="Request LKR 40000.00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638" />
+        app:layout_constraintVertical_bias="0.944"
+        tools:listitem="@layout/list_item_send_money" />
 
     <TextView
         android:id="@+id/textView51"
@@ -209,55 +71,25 @@
         android:text="Recent Requests"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352" />
-
-    <ImageView
-        android:id="@+id/imageView29"
-        android:layout_width="111dp"
-        android:layout_height="212dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462"
-        app:srcCompat="@drawable/lakshanavatar" />
+        app:layout_constraintVertical_bias="0.313" />
 
     <ImageView
         android:id="@+id/imageView30"
-        android:layout_width="65dp"
-        android:layout_height="221dp"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.102"
+        app:layout_constraintVertical_bias="0.185"
         app:srcCompat="@drawable/usera" />
 
     <ImageButton
-        android:id="@+id/button4"
-        android:layout_width="63dp"
-        android:layout_height="63dp"
-        android:layout_marginLeft="12dp"
-        android:background="@drawable/roundbtn"
-        android:elevation="10dp"
-        android:scaleType="fitCenter"
-
-
-        android:src="@drawable/paperplane"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787" />
-
-    <ImageButton
-        android:id="@+id/button10"
+        android:id="@+id/btnbacktoFS"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginLeft="6dp"

@@ -27,9 +27,15 @@ class FinancialSupport : AppCompatActivity() {
 
         val investorBtn = findViewById<ImageButton>(R.id.btnInvestor)
         val requestmoneyBtn = findViewById<ImageButton>(R.id.btnReuestmoney)
+        val sendmoneyBtn = findViewById<ImageButton>(R.id.btnSendMoney)
 
         investorBtn.setOnClickListener {
             val intent = Intent(this, Becomeaninvestor::class.java)
+            startActivity(intent)
+        }
+
+        sendmoneyBtn.setOnClickListener {
+            val intent = Intent(this, SendmoneyHome::class.java)
             startActivity(intent)
         }
 

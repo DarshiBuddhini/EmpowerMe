@@ -16,15 +16,16 @@ class MyReqMoneyAdapter(private val moneyRequestsList: ArrayList<ReqMoney>):
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvName: TextView = itemView.findViewById(R.id.InvestorName)
+
         val tvAmount: TextView = itemView.findViewById(R.id.RequestAmount)
         val investorImage: ImageView = itemView.findViewById(R.id.investorImageAvatar)
         val requestmoneyHistoryBtn: ImageButton = itemView.findViewById(R.id.requestMoneyHistorybtn)
 
 
-
         fun bind(reqMoney: ReqMoney) {
             tvName.text = reqMoney.investorName
             tvAmount.text = reqMoney.amount
+
 
 
             Glide.with(itemView)
