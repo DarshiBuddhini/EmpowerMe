@@ -14,7 +14,9 @@ import com.google.firebase.ktx.Firebase
 class FinancialHistory : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerPaymentsView: RecyclerView
     private lateinit var moneyRequestsList: ArrayList<ReqMoney>
+    private lateinit var PaymentList: ArrayList<Payments>
     private lateinit var db: FirebaseFirestore
 
 
@@ -31,9 +33,12 @@ class FinancialHistory : AppCompatActivity() {
         }
 
         recyclerView = findViewById(R.id.recycleviewRequestMoney)
+        recyclerPaymentsView = findViewById(R.id.recycleviewPayments)
         recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerPaymentsView.layoutManager = LinearLayoutManager(this)
 
         moneyRequestsList = arrayListOf()
+        PaymentList = arrayListOf()
 
         db = FirebaseFirestore.getInstance()
 
@@ -53,6 +58,27 @@ class FinancialHistory : AppCompatActivity() {
                     }
                 }
                 recyclerView.adapter = MyReqMoneyAdapter(moneyRequestsList)
+            }
+            .addOnFailureListener { exception ->
+                Toast.makeText(this, exception.toString(), Toast.LENGTH_SHORT).show()
+            }
+
+        db.collection("payments").get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
+                    val documentId = document.id
+                    val datetime = document.getString("datetime")
+                    val requestamount = document.getString("requestamount")
+                    val requestdescription = document.getString("requestdescription")
+                    val requestemail = document.getString("requestemail")
+                    val requestname = document.getString("requestname")
+
+                    if (datetime != null && requestamount != null && requestdescription != null && requestemail != null && requestname!= null ) {
+                        val payments = Payments(datetime, requestamount, requestdescription, requestemail,requestname,documentId)
+                        PaymentList.add(payments)
+                    }
+                }
+                recyclerPaymentsView.adapter = MyPaymentsAdapter(PaymentList)
             }
             .addOnFailureListener { exception ->
                 Toast.makeText(this, exception.toString(), Toast.LENGTH_SHORT).show()

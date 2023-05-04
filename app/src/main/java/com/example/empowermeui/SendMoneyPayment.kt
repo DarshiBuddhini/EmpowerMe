@@ -10,6 +10,8 @@ import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.text.SimpleDateFormat
+import java.util.*
 
 class SendMoneyPayment : AppCompatActivity() {
 
@@ -44,14 +46,19 @@ class SendMoneyPayment : AppCompatActivity() {
             val requestdescription = intent.getStringExtra("description")
             val status = "Success"
 
+
+            val dateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+            val currentDateTime = dateFormat.format(Date())
+
             val paymentsMap = hashMapOf(
                 "requestname" to requestname,
                 "requestamount" to requestamount,
                 "requestemail" to requestemail,
                 "requestdescription" to requestdescription,
-                "paymentstatus" to status
-
+                "paymentstatus" to status,
+                "datetime" to currentDateTime
             )
+
 
             db.collection("payments")
                 .add(paymentsMap)

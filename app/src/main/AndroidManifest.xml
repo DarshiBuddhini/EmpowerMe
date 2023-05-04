@@ -124,13 +124,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".FinancialHistory"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+<!--        <activity-->
+<!--            android:name=".FinancialHistory"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
         <activity
             android:name=".Moneysendsuccess"
             android:exported="false">
@@ -146,7 +146,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MyProfile"
+            android:name=".FinancialHistory"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
