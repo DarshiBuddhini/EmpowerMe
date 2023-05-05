@@ -12,8 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmpowerMeUI"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".Launch"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
         <activity
             android:name=".UpdateSuccess"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MyProfile"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -161,12 +175,12 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MyProfile"
+            android:name=".Launch"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
             <meta-data
