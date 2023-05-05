@@ -39,6 +39,12 @@ class SendMoneyPayment : AppCompatActivity() {
         payAmountTextView.text = payAmount
 
 
+        val btnBacktoSendMoney = findViewById<ImageButton>(R.id.btnbackSM)
+
+        btnBacktoSendMoney.setOnClickListener {
+            val intent = Intent(this, SendmoneyHome::class.java)
+            startActivity(intent)
+        }
 
 
         paybtn.setOnClickListener{

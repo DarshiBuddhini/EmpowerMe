@@ -6,26 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Becomeaninvestor">
 
-    <Button
-        android:id="@+id/btnSelectImage"
-        android:layout_width="117dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/round_btn"
-        android:fontFamily="@font/gilroy_semibold"
-        android:stateListAnimator="@null"
-        android:text="Set Avatar"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/pure_white"
-        android:textSize="16sp"
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintVertical_bias="0.171"
+        app:srcCompat="@drawable/useravatar" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/investorAvatarvView"
@@ -36,7 +27,7 @@
         app:civ_circle_background_color="@color/ash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171"
@@ -246,4 +237,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.321" />
+
+    <ImageButton
+        android:id="@+id/btnSelectImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/roundbtn"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+
+
+        android:src="@drawable/addbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255" />
 </androidx.constraintlayout.widget.ConstraintLayout>

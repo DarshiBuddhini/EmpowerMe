@@ -49,7 +49,7 @@
         app:srcCompat="@drawable/plantonecart" />
 
     <ImageButton
-        android:id="@+id/button29"
+        android:id="@+id/btnpronoti"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginLeft="6dp"
@@ -63,22 +63,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.056" />
-
-    <ImageButton
-        android:id="@+id/button30"
-        android:layout_width="41dp"
-        android:layout_height="41dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/round_corner"
-        android:scaleType="fitCenter"
-        android:src="@drawable/bell"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055" />
 
     <TextView
         android:id="@+id/textView76"

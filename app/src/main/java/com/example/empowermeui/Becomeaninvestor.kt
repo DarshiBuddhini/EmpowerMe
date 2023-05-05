@@ -19,7 +19,7 @@ class Becomeaninvestor : AppCompatActivity() {
     private lateinit var inCompanyName: EditText
     private lateinit var inContactNumber: EditText
     private lateinit var investorAvatarvView: ImageView
-    private lateinit var btnSelectImage: Button
+    private lateinit var btnSelectImage: ImageButton
     private lateinit var inInvestorRequest: Button
 
     private var imageUri: Uri? = null

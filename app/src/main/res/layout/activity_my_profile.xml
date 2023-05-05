@@ -91,7 +91,7 @@
         app:layout_constraintVertical_bias="0.056" />
 
     <ImageButton
-        android:id="@+id/button32"
+        android:id="@+id/notificationbtn"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginLeft="6dp"

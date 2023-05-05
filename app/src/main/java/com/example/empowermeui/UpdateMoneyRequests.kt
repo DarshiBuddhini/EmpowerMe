@@ -49,11 +49,35 @@ class UpdateMoneyRequests : AppCompatActivity() {
         emailEditText.hint = email
 
         updateButton.setOnClickListener {
-
             val name = businessnameEditText.text.toString()
             val amount = amountEditText.text.toString()
             val description = descriptionEditText.text.toString()
             val email = emailEditText.text.toString()
+
+            if (name.isEmpty()) {
+                businessnameEditText.error = "Business name cannot be empty"
+                return@setOnClickListener
+            }
+
+            if (email.isEmpty()) {
+                // Show an error message for the email field
+                emailEditText.setError("Please enter the email")
+                return@setOnClickListener
+            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                // Show an error message for invalid email format
+                emailEditText.setError("Please enter a valid email address")
+                return@setOnClickListener
+            }
+
+            if (description.isEmpty()) {
+                descriptionEditText.error = "Description cannot be empty"
+                return@setOnClickListener
+            }
+
+            if (email.isEmpty()) {
+                emailEditText.error = "Email cannot be empty"
+                return@setOnClickListener
+            }
 
             val data = hashMapOf(
                 "name" to name,
@@ -65,9 +89,6 @@ class UpdateMoneyRequests : AppCompatActivity() {
             if (docRef != null) {
                 docRef.update(data as Map<String, Any>)
                     .addOnSuccessListener {
-
-                        //Toast.makeText(this, "Document updated successfully", Toast.LENGTH_SHORT).show()
-
                         val intent = Intent(this, UpdateSuccess::class.java)
                         startActivity(intent)
                         finish()
@@ -77,6 +98,7 @@ class UpdateMoneyRequests : AppCompatActivity() {
                     }
             }
         }
+
 
     }
 }

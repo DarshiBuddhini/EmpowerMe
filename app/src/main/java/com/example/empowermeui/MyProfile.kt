@@ -17,6 +17,12 @@ class MyProfile : AppCompatActivity() {
             val intent = Intent(this, FinancialSupport::class.java)
             startActivity(intent)
         }
+        val btnGotoNotification= findViewById<ImageButton>(R.id.notificationbtn)
+
+        btnGotoNotification.setOnClickListener {
+            val intent = Intent(this, Notifications::class.java)
+            startActivity(intent)
+        }
 
         val btnAboutus= findViewById<ImageButton>(R.id.btnaboutus)
 

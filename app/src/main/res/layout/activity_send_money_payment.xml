@@ -53,15 +53,16 @@
 
     <TextView
         android:id="@+id/payAmount"
-        android:layout_width="189dp"
-        android:layout_height="78dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/gilroy_semibold"
         android:text="XXXXX"
         android:textColor="@color/ic_launcher_background"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.512" />
@@ -71,7 +72,7 @@
         android:layout_width="38dp"
         android:layout_height="17dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="10dp"
         android:alpha="0.7"
         android:fontFamily="@font/gilroy_semibold"
         android:text="LKR"
@@ -79,7 +80,8 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintEnd_toStartOf="@+id/payAmount"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.513" />
@@ -100,7 +102,7 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <ImageButton
-        android:id="@+id/button21"
+        android:id="@+id/btnbackSM"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginLeft="6dp"
