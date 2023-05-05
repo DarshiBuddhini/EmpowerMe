@@ -1,7 +1,9 @@
 package com.example.empowermeui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.TextView
 
 class PaymentHistory : AppCompatActivity() {
@@ -33,6 +35,14 @@ class PaymentHistory : AppCompatActivity() {
         val documentid = intent.getStringExtra("documentid")
 
         documentidTextView.text = documentid
+
+
+
+        val btnBacktoFinancialHistory = findViewById<ImageButton>(R.id.btnbacktoH)
+        btnBacktoFinancialHistory.setOnClickListener {
+            val intent = Intent(this, FinancialHistory::class.java)
+            startActivity(intent)
+        }
 
 
     }

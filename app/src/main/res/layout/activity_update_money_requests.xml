@@ -20,13 +20,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/backtoFSMRequests2"
+        app:layout_constraintStart_toEndOf="@+id/backtoRePage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.068" />
 
     <ImageButton
-        android:id="@+id/backtoFSMRequests2"
+        android:id="@+id/backtoRePage"
         android:layout_width="41dp"
         android:layout_height="41dp"
         android:layout_marginLeft="6dp"

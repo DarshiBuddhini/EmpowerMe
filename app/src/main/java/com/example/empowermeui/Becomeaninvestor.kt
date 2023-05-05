@@ -67,9 +67,14 @@ class Becomeaninvestor : AppCompatActivity() {
 
             if (sInEmail.isEmpty()) {
                 // Show an error message for the email field
-                inEmail.setError("Please enter your email")
+                inEmail.setError("Please enter the email")
+                return@setOnClickListener
+            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(sInEmail).matches()) {
+                // Show an error message for invalid email format
+                inEmail.setError("Please enter a valid email address")
                 return@setOnClickListener
             }
+
 
             if (sInCompanyName.isEmpty()) {
                 // Show an error message for the company name field

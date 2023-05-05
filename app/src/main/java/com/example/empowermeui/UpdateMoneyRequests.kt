@@ -1,11 +1,9 @@
 package com.example.empowermeui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -24,7 +22,12 @@ class UpdateMoneyRequests : AppCompatActivity() {
 
 
 
+        val btnBacktoRequestPage= findViewById<ImageButton>(R.id.backtoRePage)
 
+        btnBacktoRequestPage.setOnClickListener {
+            val intent = Intent(this, RequestMoneyPage::class.java)
+            startActivity(intent)
+        }
 
 
 
@@ -62,7 +65,12 @@ class UpdateMoneyRequests : AppCompatActivity() {
             if (docRef != null) {
                 docRef.update(data as Map<String, Any>)
                     .addOnSuccessListener {
-                        Toast.makeText(this, "Document updated successfully", Toast.LENGTH_SHORT).show()
+
+                        //Toast.makeText(this, "Document updated successfully", Toast.LENGTH_SHORT).show()
+
+                        val intent = Intent(this, UpdateSuccess::class.java)
+                        startActivity(intent)
+                        finish()
                     }
                     .addOnFailureListener { e ->
                         Toast.makeText(this, "Error updating document: $e", Toast.LENGTH_SHORT).show()

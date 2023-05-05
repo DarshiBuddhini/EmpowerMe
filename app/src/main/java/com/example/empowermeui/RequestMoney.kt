@@ -63,7 +63,12 @@ class RequestMoney : AppCompatActivity() {
                 // Show an error message for the email field
                 reqMoneyEmail.setError("Please enter the email")
                 return@setOnClickListener
+            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(sRMEmail).matches()) {
+                // Show an error message for invalid email format
+                reqMoneyEmail.setError("Please enter a valid email address")
+                return@setOnClickListener
             }
+
 
             if (sRMDescription.isEmpty()) {
                 // Show an error message for the description field

@@ -1,12 +1,17 @@
 package com.example.empowermeui
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.app.NotificationCompat
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -63,6 +68,34 @@ class SendMoneyPayment : AppCompatActivity() {
             db.collection("payments")
                 .add(paymentsMap)
                 .addOnSuccessListener { documentReference ->
+
+
+                    val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+                    val notificationId = 1
+                    val channelId = "my_channel_id"
+                    val channelName = "My Channel"
+                    val importance = NotificationManager.IMPORTANCE_HIGH
+                    val notificationTitle = "Payement send successfully!"
+                    val notificationText = "A Transaction for LKR $requestamount.00 has been debited to $requestname on $currentDateTime"
+
+                    // Create a notification channel (required for Android Oreo and above)
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        val channel = NotificationChannel(channelId, channelName, importance)
+                        notificationManager.createNotificationChannel(channel)
+                    }
+
+                    // Create a notification
+                    val notificationBuilder = NotificationCompat.Builder(this, channelId)
+                        .setSmallIcon(R.drawable.notilogo)
+                        .setContentTitle(notificationTitle)
+                        .setContentText(notificationText)
+                        .setAutoCancel(true)
+
+                    // Show the notification
+                    notificationManager.notify(notificationId, notificationBuilder.build())
+
+
                     //Toast.makeText(this,"Success", Toast.LENGTH_LONG).show()
                     val intent = Intent(this, PaymentSuccess::class.java)
                     startActivity(intent)
