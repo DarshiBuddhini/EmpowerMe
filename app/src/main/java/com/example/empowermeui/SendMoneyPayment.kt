@@ -107,6 +107,7 @@ class SendMoneyPayment : AppCompatActivity() {
                     startActivity(intent)
                     finish()
 
+
                 }
                 .addOnFailureListener{ e ->
                     Toast.makeText(this,"Failed $e", Toast.LENGTH_LONG).show()
