@@ -14,6 +14,6 @@ class RequestDeletedSuccess : AppCompatActivity() {
             val intent = Intent(this, FinancialHistory::class.java)
             startActivity(intent)
             finish()
-        },1000)
+        },3000)
     }
 }
