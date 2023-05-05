@@ -26,17 +26,15 @@ class MyPaymentsAdapter(private val PaymentList: ArrayList<Payments>):
 
 
 
-//            paymentsHistorybtn.setOnClickListener {
-//                val intent = Intent(itemView.context, RequestMoneyPage::class.java)
-////                intent.putExtra("email", reqMoney.email)
-////                intent.putExtra("description", reqMoney.description)
-////                intent.putExtra("amount", reqMoney.amount)
-////                intent.putExtra("investorName", reqMoney.investorName)
-////                intent.putExtra("name", reqMoney.name)
-////                intent.putExtra("documentId", reqMoney.documentId)
-////                intent.putExtra("investor_image", investorImage.drawable.constantState?.newDrawable()?.toBitmap())
-//                itemView.context.startActivity(intent)
-//            }
+            paymentsHistorybtn.setOnClickListener {
+                val intent = Intent(itemView.context, PaymentHistory::class.java)
+                intent.putExtra("datetime", payement.datetime)
+                intent.putExtra("requestamount", payement.requestamount)
+                intent.putExtra("requestemail", payement.requestemail)
+                intent.putExtra("requestname", payement.requestname)
+                intent.putExtra("documentid", payement.documentid)
+                itemView.context.startActivity(intent)
+            }
 
 
         }

@@ -7,8 +7,6 @@ import android.os.Bundle
 import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.example.empowermeui.FinancialSupport
-import com.example.empowermeui.R
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
@@ -85,7 +83,7 @@ class Becomeaninvestor : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-// Show an error message if no image is selected
+                // Show an error message if no image is selected
             if (imageUri == null) {
                 Toast.makeText(this, "Please select an image", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
