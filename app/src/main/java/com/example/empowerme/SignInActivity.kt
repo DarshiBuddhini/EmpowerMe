@@ -34,6 +34,7 @@ class SignInActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         btnSignIn.setOnClickListener {
             val email = userEmail.text.toString().trim()
             val password = userPassword.text.toString().trim()
