@@ -82,8 +82,6 @@ class RequestMoney : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-// If all fields are filled, continue with the rest of the code here
-
             val moneyRequestsMap = hashMapOf(
                 "name" to sRMName,
                 "email" to sRMEmail,
@@ -106,10 +104,6 @@ class RequestMoney : AppCompatActivity() {
                     Toast.makeText(this,"Failed $e", Toast.LENGTH_LONG).show()
                 }
         }
-
-
-
-
 
         // Get the TextView with the id "InvestorName" from the layout file
         val investorNameTextView = findViewById<TextView>(R.id.InvestorName)
@@ -136,8 +130,6 @@ class RequestMoney : AppCompatActivity() {
             val investorImage: ImageView = findViewById(R.id.investorImage)
             investorImage.setImageBitmap(investorImageBitmap)
         }
-
-
 
     }
 }

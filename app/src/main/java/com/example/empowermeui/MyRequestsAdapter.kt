@@ -16,19 +16,14 @@ class MyRequestsAdapter(private val moneyRequestsList: ArrayList<ReqMoney>):
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-
         val tvReqName: TextView = itemView.findViewById(R.id.RequesterName)
         val tvReqAmount: TextView = itemView.findViewById(R.id.RequestAmount)
         val sendmoneyBtn: ImageButton = itemView.findViewById(R.id.sendMoneyBtn)
 
         fun bind(reqMoney: ReqMoney) {
 
-
             tvReqName.text = reqMoney.name
             tvReqAmount.text = reqMoney.amount
-
-
-
 
             sendmoneyBtn.setOnClickListener {
                 val intent = Intent(itemView.context, SendMoneyPayment::class.java)
@@ -40,10 +35,7 @@ class MyRequestsAdapter(private val moneyRequestsList: ArrayList<ReqMoney>):
 
                 itemView.context.startActivity(intent)
             }
-
-
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {

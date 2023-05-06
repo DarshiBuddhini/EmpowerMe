@@ -20,19 +20,12 @@ class UpdateMoneyRequests : AppCompatActivity() {
         val amount = intent.getStringExtra("amount")
 
 
-
-
         val btnBacktoRequestPage= findViewById<ImageButton>(R.id.backtoRePage)
 
         btnBacktoRequestPage.setOnClickListener {
             val intent = Intent(this, RequestMoneyPage::class.java)
             startActivity(intent)
         }
-
-
-
-
-
 
         val docRef = documentId?.let { db.collection("moneyrequests").document(it) }
 
@@ -74,8 +67,8 @@ class UpdateMoneyRequests : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if (email.isEmpty()) {
-                emailEditText.error = "Email cannot be empty"
+            if (amount.isEmpty()) {
+                amountEditText.error = "Amount cannot be empty"
                 return@setOnClickListener
             }
 

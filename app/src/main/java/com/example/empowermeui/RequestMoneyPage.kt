@@ -25,8 +25,6 @@ class RequestMoneyPage : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
         val investorNameTextView = findViewById<TextView>(R.id.InvestorNamePro)
         val investorName = intent.getStringExtra("investorName")
 
@@ -52,8 +50,6 @@ class RequestMoneyPage : AppCompatActivity() {
 
         businessTextView.text = businessname
 
-
-
         //delete moneyrequests collections
 
         val documentId = intent.getStringExtra("documentId")
@@ -77,8 +73,6 @@ class RequestMoneyPage : AppCompatActivity() {
             }
         }
 
-
-
         val btnUpdateMoneyRequests = findViewById<Button>(R.id.updateRequestsbtn)
 
         btnUpdateMoneyRequests.setOnClickListener {
@@ -96,10 +90,6 @@ class RequestMoneyPage : AppCompatActivity() {
             val investorImage: ImageView = findViewById(R.id.investorImageRequest)
             investorImage.setImageBitmap(investorImageBitmap)
         }
-
-
-
-
 
     }
 }

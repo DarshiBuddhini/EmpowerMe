@@ -114,10 +114,6 @@ class SendMoneyPayment : AppCompatActivity() {
                 }
 
 
-
-
-
-
             //delete moneyrequests collections
 
             val documentId = intent.getStringExtra("documentId")

@@ -13,8 +13,6 @@ class Launch : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
-
-
         Handler().postDelayed({
             val intent = Intent(this, MyProfile::class.java)
             startActivity(intent)
