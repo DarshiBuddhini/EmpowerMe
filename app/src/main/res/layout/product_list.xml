@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="7dp"
+    android:backgroundTint="@color/material_dynamic_neutral_variant100">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/round">
+
+        <ImageButton
+            android:id="@+id/FwdBtnProduct"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:background="@drawable/round_corner"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fwdbtn" />
+
+        <TextView
+            android:id="@+id/TVproductName"
+            android:layout_width="148dp"
+            android:layout_height="21dp"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:text="Product Name"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.393" />
+
+        <TextView
+            android:id="@+id/catText"
+            android:layout_width="99dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="Category"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImgViewProduct"
+            android:layout_width="74dp"
+            android:layout_height="75dp"
+            app:civ_border_color="#F9F9F9"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.644" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

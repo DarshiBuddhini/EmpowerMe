@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+    <ImageButton
+        android:id="@+id/dltstoreBTN2"
+        android:layout_width="33dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/delete_icon" />
+
+    <ImageButton
+        android:id="@+id/editStorebtn"
+        android:layout_width="18dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="93dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtnAddProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/storename2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137"
+        app:srcCompat="@drawable/edit" />
+
+    <TextView
+        android:id="@+id/storename2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.9"
+        android:fontFamily="@font/gilroy_semibold"
+        android:text="storeName"
+        android:textColor="@color/gray_dark_clr"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <ImageView
+        android:id="@+id/shopimg"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/storename2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109"
+        app:srcCompat="@drawable/shop" />
+
+    <ImageButton
+        android:id="@+id/bkbtn"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_click"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_extrabold"
+        android:text="Products List"
+        android:textAlignment="center"
+        android:textColor="@color/gray_dark_clr"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgBtnAddProduct"
+        android:layout_width="367dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="Add Product"
+                android:textColor="@color/gray_dark_clr"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/add"></androidx.constraintlayout.utils.widget.ImageFilterView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewproducts"
+        android:layout_width="420dp"
+        android:layout_height="560dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/product_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

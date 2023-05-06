@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">EmpowerMe</string>
+    <!--    new product adding form-->
+    <string name="AddProductTV">Add Product</string>
+    <string name="storename">ArtsOfPlant</string>
+    <string name="cattTV">Home and Garden Business</string>
+    <string name="formTitleTV1">Add product images</string>
+    <string name="FormTV1">Product Category*</string>
+    <string name="FormTV2">Product Description*</string>
+    <string name="FormTV3">Product Name</string>
+    <string name="formTitleTV2">Product Price</string>
+    <!--    product added success activity-->
+    <string name="tvProductSuccess">Product added successfully!</string>
+    <string name="tvProductSuccess2">Add 5 or more products so that</string>
+    <string name="tvProductSuccess3">shop is more visible to users</string>
+    <string name="btnBack">Back to shop</string>
+    <string name="btnAddAnother">Add Another</string>
+    <!--create store page activity-->
+    <string name="tvHeading">My Store</string>
+    <string name="textCreateStore">Create Your Store</string>
+    <string name="tvCreatestore2">#Today</string>
+    <string name="cardTV1">Create a new store</string>
+    <string name="cardTV2">ArtsOfPlant</string>
+    <!--marketplace -->
+    <string name="textView21">Hello</string>
+    <string name="textMakertplace">Marketplace</string>
+    <string name="textView23">Best Sellers</string>
+    <string name="textView24">Categories</string>
+    <!--sign in and sign up-->
+    <string name="textView2">Already have an account ? SIGN IN</string>
+    <string name="textView3">Do not have an account?</string>
+    <string name="textView4">SIGN UP</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="btnSignUp">Sign Up</string>
+    <!--    startup activity-->
+    <string name="btnFindJob">Find a Job</string>
+    <string name="btnStartBusiness">Start a Business</string>
+    <string name="btnShopping">start to shopping</string>
+    <string name="textView">#unlock endless </string>
+    <string name="textView5">opportunities for success</string>
+    <!--store created success-->
+    <string name="textView30">Store created successfully!</string>
+    <string name="btnStore">Back to shop</string>
+    <string name="btnAddAnother2">Add Another</string>
+</resources>

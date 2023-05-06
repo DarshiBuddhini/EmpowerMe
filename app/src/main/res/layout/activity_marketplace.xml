@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context=".MarketplaceActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/catcard3"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/earing">
+
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="Long Green Earings"
+                android:textAlignment="center"
+
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="LKR500.00"
+
+                android:textAlignment="center"></TextView>
+
+            <Button
+                android:id="@+id/btnAddCart3"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_corner"
+                android:text="Add to Cart"
+
+                android:textColor="@color/white"
+                android:textSize="11sp"></Button>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/catcard2"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/cake">
+
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="Choco Chip Cake"
+                android:textAlignment="center"
+
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="LKR1200.00"
+
+                android:textAlignment="center"></TextView>
+
+            <Button
+                android:id="@+id/btnAddCart2"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_corner"
+                android:text="Add to Cart"
+                android:textColor="@color/white"
+                android:textSize="11sp"></Button>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/catcard1"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ryantree">
+
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="Ryan Greenery Plants"
+
+                android:textAlignment="center"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="LKR1200.00"
+
+                android:textAlignment="center"></TextView>
+
+            <Button
+                android:id="@+id/btnAddCart1"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_corner"
+                android:text="Add to Cart"
+                android:textColor="@color/white"
+                android:textSize="11sp"></Button>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textMarketplace"
+        android:layout_width="304dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/gilroy_extrabold"
+        android:text="Marketplace"
+        android:textColor="@color/gray_dark_clr"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/gilroy_semibold"
+        android:text="Categories"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_white_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134">
+
+    </SearchView>
+
+    <!--    card 3-->
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/gilroy_semibold"
+        android:text="Best Sellers"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sellercard1"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:alpha="0.9"
+                android:fontFamily="@font/gilroy_semibold"
+
+                android:text="ArtsOfPlants"
+                android:textColor="@color/gray_dark_clr"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Home and garden"
+                android:textAlignment="center"
+
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="84dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/shop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sellercard2"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:alpha="0.9"
+                android:text="Cake By Sayu"
+                android:textColor="@color/gray_dark_clr"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Homemade Cakes"
+                android:textAlignment="center"
+
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="79dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/shop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sellercard3"
+        android:layout_width="105dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205">
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/gilroy_light"
+            android:text="Clothing women"
+
+            android:textAlignment="center"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="70dp"
+            android:alpha="0.9"
+            android:text="GFLOCK clothing"
+            android:textAlignment="center"
+            android:textColor="@color/gray_dark_clr"
+            android:textSize="16sp"></TextView>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/shop"
+            tools:layout_conversion_absoluteHeight="58dp"
+            tools:layout_conversion_absoluteWidth="105dp"
+            tools:layout_editor_absoluteX="278dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

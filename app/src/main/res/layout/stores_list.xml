@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/storecardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_white_rounded"
+    android:backgroundTint="@color/material_dynamic_neutral_variant100">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardviewStore"
+        android:layout_width="401dp"
+        android:layout_height="129dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+
+        <TextView
+            android:id="@+id/TVstoreName"
+            android:layout_width="207dp"
+            android:layout_height="24dp"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:text="Store Name"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.634"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.361" />
+
+        <TextView
+            android:id="@+id/TVstoreCat"
+            android:layout_width="155dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="36dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="store Category"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="107dp"
+            android:layout_height="74dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.436"
+            app:srcCompat="@drawable/shop" />
+
+        <ImageButton
+            android:id="@+id/fwdbtn"
+            android:layout_width="45dp"
+            android:layout_height="34dp"
+            android:background="@drawable/round_corner"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.494"
+            app:srcCompat="@drawable/fwdbtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
