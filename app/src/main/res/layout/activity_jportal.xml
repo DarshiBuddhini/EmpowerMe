@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#404040"
+    tools:context=".JPortalActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFace"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@drawable/user_one" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/gilroy_light"
+        android:text="Hello,"
+        android:textColor="#817E7E"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSname"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/gilroy_extrabold"
+        android:text="Imesh Pasinda"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:background="@drawable/search_background"
+        android:backgroundTint="#FDF3F3"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Job"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/corner"
+        android:backgroundTint="#FDF3F3"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        app:srcCompat="@drawable/categories" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/corner"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@drawable/bell" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_semibold"
+        android:text="Popular Jobs"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+<!--    <GridLayout-->
+<!--        android:id="@+id/gridLayout"-->
+<!--        android:layout_width="387dp"-->
+
+<!--        android:layout_height="162dp"-->
+<!--        android:columnCount="3"-->
+<!--        android:rowCount="1"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.474">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_row="0"-->
+<!--        android:layout_column="1"-->
+<!--        android:layout_gravity ="fill"-->
+<!--        android:layout_rowWeight="1"-->
+<!--        android:layout_columnWeight="1"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:cardConerRadius="8dp"-->
+<!--        app:cardElevation="8dp"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientaion="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center_vertical|center_horizontal"-->
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="305dp"-->
+<!--                android:layout_height="450dp"-->
+<!--                android:src="@drawable/android_icon" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="ArtsofPants"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textAlignment="center"/>-->
+<!--        </LinearLayout>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </GridLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+

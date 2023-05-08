@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobPortalActivity">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/mageViewDots"-->
+<!--        android:layout_width="18dp"-->
+<!--        android:layout_height="34dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.847"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.381"-->
+<!--        app:srcCompat="@drawable/dots" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/btnNext03"-->
+<!--        android:layout_width="26dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginBottom="348dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.797"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:srcCompat="@drawable/right_arrow" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/btnNext02"-->
+<!--        android:layout_width="26dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.472"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.503"-->
+<!--        app:srcCompat="@drawable/right_arrow" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView6"-->
+<!--        android:layout_width="18dp"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:layout_marginStart="84dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.381"-->
+<!--        app:srcCompat="@drawable/dots" />-->
+
+    <ImageView
+        android:id="@+id/imageViewFace"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@drawable/user_one" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/gilroy_light"
+        android:text="Hello,"
+        android:textColor="#817E7E"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSname"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/gilroy_extrabold"
+        android:text="Imesh Pasinda"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/edtSearch"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="140dp"
+        android:background="#FDF3F3"
+        android:backgroundTint="#FDF3F3"
+        android:queryBackground="@drawable/corner"
+        android:queryHint="Search Job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/clara" />
+    </SearchView>
+
+    <ImageView
+        android:id="@+id/btnCategory"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:background="#FA510F"
+        android:backgroundTint="#FAF0F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204"
+        app:srcCompat="@drawable/categories" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvHeading01"-->
+<!--        android:layout_width="148dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:fontFamily="@font/gilroy_semibold"-->
+<!--        android:text="Popular Jobs"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="22sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.071"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.305" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/cardView01"-->
+<!--        android:layout_width="92dp"-->
+<!--        android:layout_height="97dp"-->
+<!--        android:backgroundTint="#FBFBFB"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.065"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.419" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView4"-->
+<!--        android:layout_width="47dp"-->
+<!--        android:layout_height="49dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.093"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.39"-->
+<!--        app:srcCompat="@drawable/android_icon" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView5"-->
+<!--        android:layout_width="18dp"-->
+<!--        android:layout_height="34dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.554"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.381"-->
+<!--        app:srcCompat="@drawable/dots" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvC011"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/gilroy_semibold"-->
+<!--        android:text="ArtsofPlants"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.087"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.443" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvC12"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Sales Asociate"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.066"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.469" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView8"-->
+<!--        android:layout_width="53dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="164dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.39"-->
+<!--        app:srcCompat="@drawable/clara" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvC21"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="396dp"-->
+<!--        android:fontFamily="@font/gilroy_semibold"-->
+<!--        android:text="Clara Clothing"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.464"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvC22"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/gilroy_light"-->
+<!--        android:text="Cashier"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.465"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.471" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/btnNext01"-->
+<!--        android:layout_width="26dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.142"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.503"-->
+<!--        app:srcCompat="@drawable/right_arrow" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView12"-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="49dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.785"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.391"-->
+<!--        app:srcCompat="@drawable/cake_store" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv31"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/gilroy_semibold"-->
+<!--        android:text="Cake Bakery"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.817"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.443" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv32"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/gilroy_light"-->
+<!--        android:text="Kitchen Helper"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.843"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.471" />-->
+
+    <TextView
+        android:id="@+id/tvCatgories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_semibold"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <TextView
+        android:id="@+id/tvQualification01"
+        android:layout_width="58dp"
+        android:layout_height="18dp"
+        android:fontFamily="@font/gilroy_light"
+        android:text="view all"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="408dp"
+        android:layout_height="427dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947"
+        tools:listitem="@layout/portal_view" />
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/card01"-->
+    <!--        android:layout_width="351dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="24dp"-->
+
+    <!--        android:layout_marginTop="120dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        app:cardCornerRadius="20dp"-->
+    <!--        app:cardElevation="10dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.631">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical|center_horizontal"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView11"-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:padding="10sp"-->
+    <!--            app:srcCompat="@drawable/store" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvCtitle01"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:paddingLeft="-20sp"-->
+    <!--            android:paddingTop="8sp"-->
+    <!--            android:text="Marketing Associate"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:fontFamily="@font/gilroy_semibold"-->
+    <!--            android:textAlignment="center" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvStitle01"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:paddingLeft="-20sp"-->
+    <!--            android:paddingTop="30sp"-->
+    <!--            android:text="Entry Level Position"-->
+    <!--            android:textSize="12sp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:fontFamily="@font/gilroy_light"-->
+    <!--            android:textAlignment="center" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnNext001"-->
+    <!--            android:layout_width="40dp"-->
+    <!--            android:layout_height="31dp"-->
+    <!--            android:layout_marginLeft="300dp"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:layout_marginRight="26dp"-->
+    <!--            android:alpha="0.5"-->
+    <!--            android:background="@drawable/round_corner"-->
+    <!--            android:scaleType="fitCenter"-->
+    <!--            android:src="@drawable/fwdbtn"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.091"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.04" />-->
+
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/card02"-->
+    <!--        android:layout_width="351dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="24dp"-->
+
+    <!--        android:layout_marginTop="350dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        app:cardCornerRadius="20dp"-->
+    <!--        app:cardElevation="10dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.631">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical|center_horizontal"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView22"-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:padding="10sp"-->
+    <!--            app:srcCompat="@drawable/web_design" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvCTitle02"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:paddingLeft="-20sp"-->
+    <!--            android:paddingTop="8sp"-->
+    <!--            android:text="Designer/Craftsman"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:fontFamily="@font/gilroy_semibold"-->
+    <!--            android:textAlignment="center" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvStitle02"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:paddingLeft="-20sp"-->
+    <!--            android:paddingTop="30sp"-->
+    <!--            android:text="Handmade Gift Items"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="12sp"-->
+    <!--            android:fontFamily="@font/gilroy_light"-->
+    <!--            android:textAlignment="center" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnJ02"-->
+    <!--            android:layout_width="40dp"-->
+    <!--            android:layout_height="29dp"-->
+    <!--            android:layout_marginLeft="300dp"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:layout_marginRight="26dp"-->
+    <!--            android:background="@drawable/round_corner"-->
+    <!--            android:scaleType="fitCenter"-->
+    <!--            android:src="@drawable/fwdbtn"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.091"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.04" />-->
+
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/card3"-->
+    <!--        android:layout_width="351dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="24dp"-->
+
+    <!--        android:layout_marginTop="600dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        app:cardCornerRadius="20dp"-->
+    <!--        app:cardElevation="10dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.631">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical|center_horizontal"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageViewBakery"-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:padding="10sp"-->
+    <!--            app:srcCompat="@drawable/bakery" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvCtitle03"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:paddingLeft="-20sp"-->
+    <!--            android:paddingTop="8sp"-->
+    <!--            android:text="Head Baker"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:fontFamily="@font/gilroy_semibold"-->
+    <!--            android:textAlignment="center" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvStitle03"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:paddingLeft="-20sp"-->
+    <!--            android:paddingTop="30sp"-->
+    <!--            android:text="Small Retail Business"-->
+    <!--            android:textSize="12sp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:fontFamily="@font/gilroy_light"-->
+    <!--            android:textAlignment="center" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/btnJ03"-->
+    <!--            android:layout_width="40dp"-->
+    <!--            android:layout_height="31dp"-->
+    <!--            android:layout_marginLeft="300dp"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:layout_marginRight="26dp"-->
+    <!--            android:background="@drawable/round_corner"-->
+    <!--            android:scaleType="fitCenter"-->
+    <!--            android:src="@drawable/fwdbtn"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.091"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.04" />-->
+
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

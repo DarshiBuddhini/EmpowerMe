@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/card2"
+    android:layout_width="351dp"
+    android:layout_height="65dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.631">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewSkill"
+        android:layout_width="60dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="match_parent"
+        android:padding="10sp"
+        android:elevation="0sp"
+
+        app:srcCompat="@drawable/skill" />
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="-20sp"
+        android:paddingTop="8sp"
+        android:text="Marketing Manager"
+        android:textSize="17sp"
+        android:fontFamily="@font/gilroy_semibold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvcname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="-20sp"
+        android:paddingTop="30sp"
+        android:text="ArtsofPlants"
+        android:textSize="15sp"
+        android:fontFamily="@font/gilroy_light"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/fwd"
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/round_corner"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fwdbtn" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/verified" />
+</androidx.cardview.widget.CardView>

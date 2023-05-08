@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">EmpowerMe</string>
+    <!--Job Post Activity-->
+    <string name="tvPjob">Post a Job and Hire</string>
+    <string name="tvToday">#Today.</string>
+    <string name="tvMainTitle">Post a Job</string>
+    <string name="tv011">Sales Associate</string>
+    <string name="tv012">ArtsofPlants</string>
+    <string name="tv021">Marketing Manager</string>
+    <string name="tv022">ArtsofPlants</string>
+    <!--Job Post Application Activity-->
+    <string name="tvPost">Post a Job</string>
+    <string name="tvName">ArtsofPlants</string>
+    <string name="btnChange">Change</string>
+    <string name="tvTitle">Home and Garden Business</string>
+    <string name="tvEnter">Enter Job details*</string>
+    <string name="tvJTitle">Job Title*</string>
+    <string name="tvLocation">Location*</string>
+    <string name="tvDescription">Description*</string>
+    <string name="tvSalary">Salary*</string>
+    <string name="rbtnFullt">Full Time</string>
+    <string name="rbtnPartt">Part Time</string>
+    <string name="btnPublish">Publish</string>
+    <!--Add Job Activity-->
+    <string name="tvSuccessful">Job added successfully</string>
+    <string name="btnAdd">Add another</string>
+    <string name="btnView">View my jobs</string>
+    <!--Job Close Activity-->
+    <string name="tvTitle02">ArtsOfPlants</string>
+    <string name="tvSbtitle">Sales Associate</string>
+    <string name="tvColocation">Malabe Sri Lanka</string>
+    <string name="tvCurrency">LKR </string>
+    <string name="tv650">65000</string>
+    <string name="tvOvrview">Overview</string>
+    <string name="tvpara">Artsofplant is a reliable plant delivery business that offers a diverse selection of high-quality plants with execptional customer service.</string>
+    <string name="tvQulification">Qualifications</string>
+    <string name="tvQulification01">Should have passed GCE A/Ls, a BSc is preferred</string>
+    <string name="tvQulification02">1 to 2 years of work experience in the retail sales field</string>
+    <string name="tvQulification03">Ability to communiate in English and Sinhala.</string>
+    <string name="tvQulification04">Must be a good team player with a pleasant personality.</string>
+    <string name="btnClose">Close the Job</string>
+    <!--Job Portal Activity-->
+    <string name="tvHello">Hello,</string>
+    <string name="tvSname">Imesh Pasinda</string>
+    <string name="edtSearch">Search Job</string>
+    <string name="tvC011">ArtsofPlants</string>
+    <string name="tvC12">Sales Asociate</string>
+    <string name="tvC21">Clara Clothing</string>
+    <string name="tvC22">Cashier</string>
+    <string name="tv31">Cake Bakery</string>
+    <string name="tv32">Kitchen Helper</string>
+    <string name="tvCtitle01">Marketing Associate</string>
+    <string name="tvStitle01">Entry Level Position</string>
+    <string name="tvCTitle02">Designer/Craftsman</string>
+    <string name="tvStitle02">Handmade Gift Items</string>
+    <string name="ttvCtitle03">Head Baker</string>
+    <string name="tvStitle03">Small Retail Business</string>
+    <!--Job overview activity-->
+    <string name="tvTitle01">ArtsOfPlants</string>
+    <string name="tvStitle">Sales Associate</string>
+    <string name="tvClocation">Malabe Sri Lanka</string>
+    <string name="tvLkr">LKR </string>
+    <string name="tv65">65000</string>
+    <string name="tvOverview">Overview</string>
+    <string name="tvparagraph">Artsofplant is a reliable plant delivery business that offers a diverse selection of high-quality plants with execptional customer service.</string>
+    <string name="tvQualification">Qualifications</string>
+    <string name="tvQualification01">Should have passed GCE A/Ls, a BSc is preferred</string>
+    <string name="tvQualification02">1 to 2 years of work experience in the retail sales field</string>
+    <string name="tvQualification03">Ability to communiate in English and Sinhala.</string>
+    <string name="tvQualification04">Must be a good team player with a pleasant personality.</string>
+    <string name="btnApply">Apply now</string>
+    <!--Application Activity-->
+    <string name="tvApplication">tvApplication</string>
+    <string name="tvComName">ArtsOfPlants</string>
+    <string name="tvComLocation">Malabe Sri Lanka</string>
+    <string name="tvPosition">Sales Associate</string>
+    <string name="tvHeading">Please fii out the form below to submit your job application</string>
+    <string name="edtName">Name</string>
+    <string name="edtDob">Date of Birth</string>
+    <string name="edtEmail">Email</string>
+    <string name="edtNumber">Phone Number</string>
+    <string name="edtAddress">Address</string>
+    <string name="edtEducation">Education and Qulification</string>
+    <string name="btnSubmit">Submit</string>
+    <!--Submit Activity!-->
+    <string name="tvSubmit">Submitted</string>
+    <string name="tvReview">Your application is under review</string>
+    <!--Recent Applictions Activity!-->
+    <string name="A">Applications</string>
+    <string name="B">Recent</string>
+    <string name="C">#Applications.</string>
+    <string name="D">Job Applicants</string>
+    <string name="E">Imesh Pasinda</string>
+    <string name="F">for sales associate</string>
+
+
+</resources>
