@@ -38,6 +38,40 @@ class Becomeaninvestor : AppCompatActivity() {
         btnSelectImage = findViewById(R.id.btnSelectImage)
         inInvestorRequest = findViewById(R.id.btnInvestorRequest)
 
+
+
+
+
+        db.collection("investors")
+            .whereEqualTo("email", "Imeshpasinda@gmail.com")
+            .get()
+            .addOnSuccessListener { querySnapshot ->
+                if (!querySnapshot.isEmpty) {
+                    // Found a matching investor, navigate to SendmoneyHome activity
+
+                        val intent = Intent(this, FinancialSupport::class.java)
+                        startActivity(intent)
+                     // Programmatically perform click on sendmoneyBtn
+                } else {
+                    // No matching investor found, navigate to Becomeaninvestor activity
+
+                }
+            }
+            .addOnFailureListener { exception ->
+                Toast.makeText(this, exception.toString(), Toast.LENGTH_SHORT).show()
+            }
+
+
+
+
+
+
+
+
+
+
+
+
         val btnBacktoFinancialSupport = findViewById<ImageButton>(R.id.backtoFHbtn)
 
         btnBacktoFinancialSupport.setOnClickListener {
@@ -152,4 +186,6 @@ class Becomeaninvestor : AppCompatActivity() {
         investorAvatarvView.setImageResource(R.drawable.usera)
         imageUri = null
     }
+
+
 }

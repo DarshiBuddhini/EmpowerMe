@@ -11,3 +11,7 @@ data class ReqMoney(
     val investorAvatarUrl: String? =null
 
 )
+
+
+
+

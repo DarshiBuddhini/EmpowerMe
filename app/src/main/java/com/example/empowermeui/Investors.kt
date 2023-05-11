@@ -5,3 +5,10 @@ data class Investors(
     val company:String? = null,
     val avatarUrl : String? = null
 )
+
+
+
+
+
+
+
