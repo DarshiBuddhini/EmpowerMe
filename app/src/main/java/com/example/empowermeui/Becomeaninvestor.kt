@@ -39,39 +39,6 @@ class Becomeaninvestor : AppCompatActivity() {
         inInvestorRequest = findViewById(R.id.btnInvestorRequest)
 
 
-
-
-
-        db.collection("investors")
-            .whereEqualTo("email", "Imeshpasinda@gmail.com")
-            .get()
-            .addOnSuccessListener { querySnapshot ->
-                if (!querySnapshot.isEmpty) {
-                    // Found a matching investor, navigate to SendmoneyHome activity
-
-                        val intent = Intent(this, FinancialSupport::class.java)
-                        startActivity(intent)
-                     // Programmatically perform click on sendmoneyBtn
-                } else {
-                    // No matching investor found, navigate to Becomeaninvestor activity
-
-                }
-            }
-            .addOnFailureListener { exception ->
-                Toast.makeText(this, exception.toString(), Toast.LENGTH_SHORT).show()
-            }
-
-
-
-
-
-
-
-
-
-
-
-
         val btnBacktoFinancialSupport = findViewById<ImageButton>(R.id.backtoFHbtn)
 
         btnBacktoFinancialSupport.setOnClickListener {
@@ -109,7 +76,6 @@ class Becomeaninvestor : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-
             if (sInCompanyName.isEmpty()) {
                 // Show an error message for the company name field
                 inCompanyName.setError("Please enter your company name")
@@ -120,55 +86,78 @@ class Becomeaninvestor : AppCompatActivity() {
                 // Show an error message for the contact number field
                 inContactNumber.setError("Please enter your contact number")
                 return@setOnClickListener
+            } else if (sInContactNumber.length != 10) {
+                // Show an error message if the contact number is not exactly 10 digits long
+                inContactNumber.setError("Contact number should be 10 digits long")
+                return@setOnClickListener
             }
 
-                // Show an error message if no image is selected
+
+            // Show an error message if no image is selected
             if (imageUri == null) {
                 Toast.makeText(this, "Please select an image", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-
-            // Upload the image to Firebase Storage and save the image URL along with the other form data in a Firestore collection
-            val investorId = UUID.randomUUID().toString()
-            val imageRef = storageRef.child(investorId)
-            val uploadTask = imageRef.putFile(imageUri!!)
-            uploadTask.continueWithTask { task ->
-                if (!task.isSuccessful) {
-                    task.exception?.let { throw it }
-                }
-                imageRef.downloadUrl
-            }.addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    val investorsMap = hashMapOf(
-                        "name" to sInName,
-                        "email" to sInEmail,
-                        "company" to sInCompanyName,
-                        "contactno" to sInContactNumber,
-                        "avatarUrl" to task.result.toString()
-                    )
-                    db.collection("investors")
-                        .add(investorsMap)
-                        .addOnSuccessListener {
-//                            Toast.makeText(this, "Your request has been submitted successfully!", Toast.LENGTH_SHORT).show()
-//                            // Clear the form fields and the image view after submitting the request
-//                            clearForm()
-
-                            val intent = Intent(this, Becomeaninvestorsuccess::class.java)
-                            startActivity(intent)
-                            finish()
+            // Check if the email is already in the "investors" collection
+            db.collection("investors")
+                .whereEqualTo("email", sInEmail)
+                .get()
+                .addOnSuccessListener { querySnapshot ->
+                    if (!querySnapshot.isEmpty) {
+                        // The email is already in the "investors" collection, show an error message
+                        inEmail.setError("This email is already registered as an investor")
+                    } else {
+                        // The email is not in the "investors" collection, save the data
+                        val investorId = UUID.randomUUID().toString()
+                        val imageRef = storageRef.child(investorId)
+                        val uploadTask = imageRef.putFile(imageUri!!)
+                        uploadTask.continueWithTask { task ->
+                            if (!task.isSuccessful) {
+                                task.exception?.let { throw it }
+                            }
+                            imageRef.downloadUrl
+                        }.addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                val investorsMap = hashMapOf(
+                                    "name" to sInName,
+                                    "email" to sInEmail,
+                                    "company" to sInCompanyName,
+                                    "contactno" to sInContactNumber,
+                                    "avatarUrl" to task.result.toString()
+                                )
+                                db.collection("investors")
+                                    .add(investorsMap)
+                                    .addOnSuccessListener {
+                                        val intent =
+                                            Intent(this, Becomeaninvestorsuccess::class.java)
+                                        startActivity(intent)
+                                        finish()
+                                    }
+                                    .addOnFailureListener { e ->
+                                        Toast.makeText(
+                                            this,
+                                            "Error: ${e.message}",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
+                            } else {
+                                Toast.makeText(
+                                    this,
+                                    "Error: ${task.exception?.message}",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
                         }
-                        .addOnFailureListener { e ->
-                            Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
-                        }
-                } else {
-                    Toast.makeText(this, "Error: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                    }
                 }
-            }
+                .addOnFailureListener { e ->
+                    Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
         }
     }
 
-    // Handle the result of the image selection intent
+        // Handle the result of the image selection intent
     private val startForResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
