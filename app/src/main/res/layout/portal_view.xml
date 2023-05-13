@@ -54,7 +54,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:paddingLeft="-20sp"
-        android:paddingTop="30sp"
+        android:paddingTop="38sp"
         android:text="ArtsofPlants"
         android:textSize="15sp"
         android:fontFamily="@font/gilroy_light"
@@ -63,10 +63,10 @@
 
     <ImageButton
         android:id="@+id/fwd"
-        android:layout_width="40dp"
-        android:layout_height="28dp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
         android:layout_marginLeft="300dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_marginRight="26dp"
         android:background="@drawable/round_corner"
         android:scaleType="fitCenter"
@@ -74,9 +74,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="13dp"
-        android:layout_height="13dp"
-        android:layout_marginLeft="215dp"
-        android:layout_marginTop="34dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="30dp"
         app:srcCompat="@drawable/verified" />
 </androidx.cardview.widget.CardView>
