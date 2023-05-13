@@ -11,69 +11,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmpowerMe"
         tools:targetApi="31">
-
-<!--         <activity-->
-<!--         android:name=".JobPostApplicationActivity"-->
-<!--             android:exported="true" />-->
-
-<!--        <activity-->
-<!--            android:name=".AddJobActivity"-->
-<!--            android:exported="true" />-->
-
+        <activity
+            android:name=".MyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".JobPostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JobPortalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".JobPostApplicationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddJobActivity"
+            android:exported="true" />
         <activity
             android:name=".JobPostUpdateActivity"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".JobPortalActivity" -->
+        <!-- android:exported="true" /> -->
+        <activity
+            android:name=".ApplicationActivity"
             android:exported="true" />
-
-<!--        <activity-->
-<!--            android:name=".JobPortalActivity"-->
-<!--            android:exported="true" />-->
-
-<!--        <activity-->
-<!--            android:name=".ApplicationActivity"-->
-<!--            android:exported="true" />-->
-
-<!--         <activity-->
-<!--         android:name=".SubmitActivity"-->
-<!--         android:exported="true" />-->
-
-<!--        <activity-->
-<!--            android:name=".ApplicantsActivity"-->
-<!--            android:exported="true" />-->
-<!--        <activity-->
-<!--            android:name=".ApplicantsActivity"-->
-<!--            android:exported="false" />-->
-        <!-- <activity -->
-        <!-- android:name=".activity_job_post_update" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".JPortalActivity" -->
-        <!-- android:exported="false" /> -->
-
-        <!-- <activity -->
-        <!-- android:name=".SubmitActivity" -->
-        <!-- android:exported="false" /> &lt;!&ndash; <activity &ndash;&gt; -->
-        <!-- android:name=".AddJobActivity" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".JobPostActivity" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".ApplicationActivity" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".SubmitActivity" -->
-        <!-- android:exported="false" /> -->
-         <activity
-         android:name=".activity_job_overview"
-        android:exported="true" />
-<!--        <activity-->
-<!--         android:name=".CloseJob"-->
-<!--        android:exported="true"/>-->
-        <!-- <activity -->
-        <!-- android:name=".JobPostActivity" -->
-        <!-- android:exported="true"> -->
+        <activity
+            android:name=".SubmitActivity"
+            android:exported="true" />
         <activity
             android:name=".ApplicantsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity_job_overview"
+            android:exported="true" />
+        <activity
+            android:name=".CloseJob"
+            android:exported="true" />
+        <activity
+            android:name=".StartUpActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
