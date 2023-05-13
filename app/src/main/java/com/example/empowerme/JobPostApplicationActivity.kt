@@ -84,7 +84,9 @@ class JobPostApplicationActivity : AppCompatActivity() {
             db.collection("postApplications")
                 .add(postApplication)
                 .addOnSuccessListener{documentReferance ->
-                    Toast.makeText(this, "Success", Toast.LENGTH_LONG).show()
+//                    Toast.makeText(this, "Success", Toast.LENGTH_LONG).show()
+                    val Intent = Intent(this,AddJobActivity::class.java)
+                    startActivity(Intent)
                 }
                 .addOnFailureListener(){ e ->
                     Toast.makeText(this, "Failed $e", Toast.LENGTH_LONG).show()
