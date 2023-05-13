@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
@@ -28,9 +29,15 @@ class ApplicationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_application)
 
-        val submitbutton = findViewById<Button>(R.id.btnSubmit)
-        submitbutton.setOnClickListener{
-            val Intent = Intent(this,SubmitActivity::class.java)
+//        val submitbutton = findViewById<Button>(R.id.btnSubmit)
+//        submitbutton.setOnClickListener{
+//            val Intent = Intent(this,SubmitActivity::class.java)
+//            startActivity(Intent)
+//        }
+
+        val backwardButton = findViewById<ImageButton>(R.id.btnback)
+        backwardButton.setOnClickListener{
+            val Intent = Intent(this,JobPortalActivity::class.java)
             startActivity(Intent)
         }
 
@@ -53,6 +60,10 @@ class ApplicationActivity : AppCompatActivity() {
             val sAddress = address.text.toString().trim()
             val sQualification = qualification.text.toString().trim()
 
+            val emailPattern = "[a-zA-Z0-9._-]+@gmail\\.com"
+            val phonePattern = "^[0-9]{10}$"
+
+
             if(sName.isEmpty()){
                 name.error = "Name required"
                 return@setOnClickListener
@@ -65,10 +76,16 @@ class ApplicationActivity : AppCompatActivity() {
             }else if(sEmail.isEmpty()){
                 name.error = "Email required"
                 return@setOnClickListener
+            }else if(!sEmail.matches(emailPattern.toRegex())) {
+                name.error = "Invalid email format"
+                return@setOnClickListener
             }else if(sPhoneNumber.isEmpty()){
                 name.error = "Phone number required"
                 return@setOnClickListener
-            } else if(sAddress.isEmpty()){
+            } else if(!sPhoneNumber.matches(phonePattern.toRegex())) {
+                name.error = "Invalid phone number format"
+                return@setOnClickListener
+            }else if(sAddress.isEmpty()){
                 name.error = "Address required"
                 return@setOnClickListener
             }else if(sQualification.isEmpty()){
@@ -91,7 +108,10 @@ class ApplicationActivity : AppCompatActivity() {
             db.collection("applications")
             .add(application)
             .addOnSuccessListener{documentReferance ->
-                Toast.makeText(this, "Success", Toast.LENGTH_LONG).show()
+//                Toast.makeText(this, "Success", Toast.LENGTH_LONG).show()
+                val Intent = Intent(this,SubmitActivity::class.java)
+                startActivity(Intent)
+
             }
             .addOnFailureListener(){ e ->
                 Toast.makeText(this, "Failed $e", Toast.LENGTH_LONG).show()
