@@ -19,7 +19,7 @@ class StartUpActivity : AppCompatActivity() {
 
         val storebutton = findViewById<Button>(R.id.btnManageStore)
         storebutton.setOnClickListener {
-            val Intent = Intent(this, JobPostActivity::class.java)
+            val Intent = Intent(this, MyProfile::class.java)
             startActivity(Intent)
         }
     }
