@@ -36,6 +36,22 @@ class SendmoneyHome : AppCompatActivity() {
 
         db.collection("moneyrequests").get()
             .addOnSuccessListener { result ->
+//                for (document in result) {
+//                    val documentId = document.id
+//                    val email = document.getString("email")
+//                    val description = document.getString("description")
+//                    val amount = document.getString("amount")
+//                    val name = document.getString("name")
+//                    val investorName = document.getString("investorName")
+//                    val investorAvatarUrl = document.getString("investorAvatarUrl")
+//                    if (email != null && description != null && amount != null && investorName != null && name != null && documentId != null && investorAvatarUrl != null) {
+//                        val reqMoney = ReqMoney(investorName, amount, description, email,name,documentId,investorAvatarUrl)
+//                        moneyRequestsList.add(reqMoney)
+//                    }
+//                }
+
+                //Only show Investor Name = "Imesh Pasinda"
+
                 for (document in result) {
                     val documentId = document.id
                     val email = document.getString("email")
@@ -44,11 +60,14 @@ class SendmoneyHome : AppCompatActivity() {
                     val name = document.getString("name")
                     val investorName = document.getString("investorName")
                     val investorAvatarUrl = document.getString("investorAvatarUrl")
-                    if (email != null && description != null && amount != null && investorName != null && name != null && documentId != null && investorAvatarUrl != null) {
-                        val reqMoney = ReqMoney(investorName, amount, description, email,name,documentId,investorAvatarUrl)
+                    if (investorName != null && investorName == "Imesh Pasinda" && email != null && description != null && amount != null && name != null && documentId != null && investorAvatarUrl != null) {
+                        val reqMoney = ReqMoney(investorName, amount, description, email, name, documentId, investorAvatarUrl)
                         moneyRequestsList.add(reqMoney)
                     }
                 }
+
+
+
                 recyclerView.adapter = MyRequestsAdapter(moneyRequestsList)
             }
             .addOnFailureListener { exception ->
