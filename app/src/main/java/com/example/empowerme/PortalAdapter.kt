@@ -70,12 +70,6 @@ class PortalAdapter(private val portallist: ArrayList<Job>):
 
             forwardBtn.setOnClickListener {
                 val intent = Intent(itemView.context, ApplicationActivity::class.java)
-//                intent.putExtra("title", job.title)
-//                intent.putExtra("qualification", job.qualification)
-//                intent.putExtra("description", job.description)
-//                intent.putExtra("location", job.location)
-//                intent.putExtra("salary", job.salary)
-//                intent.putExtra("documentId", job.documentId)
                 itemView.context.startActivity(intent)
             }
 

@@ -11,14 +11,20 @@ class MyProfile : AppCompatActivity() {
         setContentView(R.layout.activity_my_profile)
 
         val jobButton = findViewById<ImageButton>(R.id.imageButton6)
-        jobButton.setOnClickListener{
-            val Intent = Intent(this,JobPostActivity::class.java)
+        jobButton.setOnClickListener {
+            val Intent = Intent(this, JobPostActivity::class.java)
             startActivity(Intent)
         }
 
         val appButton = findViewById<ImageButton>(R.id.imageButton7)
-        appButton.setOnClickListener{
-            val Intent = Intent(this,ApplicantsActivity::class.java)
+        appButton.setOnClickListener {
+            val Intent = Intent(this, ApplicantsActivity::class.java)
+            startActivity(Intent)
+        }
+
+        val bButton = findViewById<ImageButton>(R.id.button31)
+        bButton.setOnClickListener {
+            val Intent = Intent(this, StartUpActivity::class.java)
             startActivity(Intent)
         }
     }

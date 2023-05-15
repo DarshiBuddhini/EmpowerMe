@@ -29,6 +29,11 @@ class JobPostActivity : AppCompatActivity() {
             val Intent = Intent(this, JobPostApplicationActivity::class.java)
             startActivity(Intent)
         }
+        val bcbutton = findViewById<ImageButton>(R.id.btnBack)
+        bcbutton.setOnClickListener {
+            val Intent = Intent(this, MyProfile::class.java)
+            startActivity(Intent)
+        }
 
 
 

@@ -36,11 +36,11 @@ class JobPostUpdateActivity : AppCompatActivity() {
         val btnUpdate = findViewById<Button>(R.id.btnUpdate)
 
 
-        titleEditText.hint = title
-        locationEditText.hint = location
-        descriptionEditText.hint = description
-        salaryEditText.hint = salary
-        qualificationEditText.hint = qualification
+        titleEditText.setText(intent.getStringExtra("title").toString())
+        locationEditText.setText(intent.getStringExtra("location").toString())
+        descriptionEditText.setText(intent.getStringExtra("description").toString())
+        salaryEditText.setText(intent.getStringExtra("salary").toString())
+        qualificationEditText.setText(intent.getStringExtra("salary").toString())
 
 
         val docRefDelete = documentId?.let { db.collection("postApplications").document(it) }
