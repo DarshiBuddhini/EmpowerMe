@@ -53,10 +53,13 @@ class FinancialHistory : AppCompatActivity() {
                     val investorName = document.getString("investorName")
                     val investorAvatarUrl = document.getString("investorAvatarUrl")
                     if (email != null && description != null && amount != null && investorName != null && name != null && documentId != null && investorAvatarUrl != null) {
-                        val reqMoney = ReqMoney(investorName, amount, description, email,name,documentId,investorAvatarUrl)
-                        moneyRequestsList.add(reqMoney)
+                        if (investorName != "Imesh Pasinda") { // add this conditional statement
+                            val reqMoney = ReqMoney(investorName, amount, description, email,name,documentId,investorAvatarUrl)
+                            moneyRequestsList.add(reqMoney)
+                        }
                     }
                 }
+
                 recyclerView.adapter = MyReqMoneyAdapter(moneyRequestsList)
             }
             .addOnFailureListener { exception ->
