@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "727586980076",
+    "project_id": "empowerme-d141b",
+    "storage_bucket": "empowerme-d141b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727586980076:android:da74132db3436a128425c9",
+        "android_client_info": {
+          "package_name": "com.example.empowerme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727586980076-8ccpu4a63n3v1hbgiusfethg7ogkk419.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj2fxIPRokUjalnqtGYfaYmALry_bngoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727586980076-8ccpu4a63n3v1hbgiusfethg7ogkk419.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727586980076:android:7c125a641c9740128425c9",
+        "android_client_info": {
+          "package_name": "com.example.empowermeui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727586980076-8ccpu4a63n3v1hbgiusfethg7ogkk419.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj2fxIPRokUjalnqtGYfaYmALry_bngoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727586980076-8ccpu4a63n3v1hbgiusfethg7ogkk419.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727586980076:android:4b2c65961f225ad18425c9",
+        "android_client_info": {
+          "package_name": "com.example.skill_training"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727586980076-8ccpu4a63n3v1hbgiusfethg7ogkk419.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj2fxIPRokUjalnqtGYfaYmALry_bngoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727586980076-8ccpu4a63n3v1hbgiusfethg7ogkk419.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727586980076:android:b7cf8b94f750c9c88425c9",
+        "android_client_info": {
+          "package_name": "com.example.skilltreaning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727586980076-8ccpu4a63n3v1hbgiusfethg7ogkk419.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj2fxIPRokUjalnqtGYfaYmALry_bngoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727586980076-8ccpu4a63n3v1hbgiusfethg7ogkk419.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

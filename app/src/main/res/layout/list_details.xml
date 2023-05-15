@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="Name:Manuka"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/DateOfBirthe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="DateOfBirthe:05/08/2000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="Age:23"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="Email:manuka@gmail.com"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="Address: No.05, Nugegoda"
+            android:textSize="16sp"
+            tools:ignore="ExtraText" />
+
+        <TextView
+            android:id="@+id/PNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="PNumber0775009990"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:text="Course:Diy Crafts"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EMpowerMe</string>
+
+    <string-array name="Courses">
+        <item>Select your coruses*</item>
+        <item>Communication Skills</item>
+        <item>Pastry and Bakery</item>
+        <item>Digital Marketing</item>
+        <item>Diy Crafts</item>
+    </string-array>
+</resources>
