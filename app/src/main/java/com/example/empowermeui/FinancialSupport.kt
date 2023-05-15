@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class FinancialSupport : AppCompatActivity() {
@@ -35,9 +37,28 @@ class FinancialSupport : AppCompatActivity() {
         }
 
         sendmoneyBtn.setOnClickListener {
-            val intent = Intent(this, SendmoneyHome::class.java)
-            startActivity(intent)
+            val currentUserEmail = "Imeshpasinda@gmail.com"
+            val db = Firebase.firestore
+
+            db.collection("investors")
+                .whereEqualTo("email", currentUserEmail)
+                .get()
+                .addOnSuccessListener { documents ->
+                    if (!documents.isEmpty) {
+                        val intent = Intent(this, SendmoneyHome::class.java)
+                        startActivity(intent)
+                    } else {
+                        val intent = Intent(this, SendMoneyError::class.java)
+                        startActivity(intent)
+                    }
+                }
+                .addOnFailureListener { exception ->
+                    Toast.makeText(this, "Failed to check email: $exception", Toast.LENGTH_SHORT).show()
+                }
         }
+
+
+
 
         requestmoneyBtn.setOnClickListener {
             val intent = Intent(this, Requestmoneyhome::class.java)

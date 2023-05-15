@@ -10,7 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="341dp"
-        android:layout_height="79dp"
+        android:layout_height="96dp"
         android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,25 +20,10 @@
 
 
         <TextView
-            android:id="@+id/InvestorName"
-            android:layout_width="249dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/gilroy_semibold"
-            android:text="Name"
-            android:textColor="@color/ash"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="packed" />
-
-        <TextView
             android:id="@+id/InvestorCompany"
-            android:layout_width="249dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="40dp"
+            android:layout_width="234dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="55dp"
             android:fontFamily="@font/gilroy_semibold"
             android:text="Company"
             android:textColor="@color/ash"
@@ -50,10 +35,25 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed" />
 
+        <TextView
+            android:id="@+id/InvestorName"
+            android:layout_width="234dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="Name"
+            android:textColor="@color/ash"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/investorImage"
-            android:layout_width="74dp"
-            android:layout_height="75dp"
+            android:layout_width="98dp"
+            android:layout_height="97dp"
             app:civ_border_color="#F9F9F9"
             app:civ_border_width="2dp"
             app:civ_circle_background_color="@color/ash"
